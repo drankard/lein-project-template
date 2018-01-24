@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Parameters:
+    Environment:
+        Type: String
+Resources:
+  {{name}}:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+        FunctionName: {{name}}
+        Tracing: Active
+        AutoPublishAlias: !Ref Environment
+        Handler: {{name}}.handler::handle
+        Runtime: java8
+        MemorySize: 1024
+        Timeout: 20
+        CodeUri: 'target/{{name}}-0.1.0-SNAPSHOT-standalone.jar'
+
