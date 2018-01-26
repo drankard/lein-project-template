@@ -5,4 +5,5 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :deploy-repositories [["releases" :clojars]]
+
   :eval-in-leiningen true)

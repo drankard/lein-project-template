@@ -3,7 +3,7 @@
   <groupId>lambda-project</groupId>
   <artifactId>lein-template</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
   <name>lein-template</name>
   <description>FIXME: write description</description>
   <url>http://example.com/FIXME</url>
@@ -13,6 +13,13 @@
       <url>http://www.eclipse.org/legal/epl-v10.html</url>
     </license>
   </licenses>
+  <scm>
+    <connection>scm:git:git://github.com/drankard/lein-project-template.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/drankard/lein-project-template.git</developerConnection>
+    <tag>ed46992c05610ae0de0ce2ef43688765d4c1cd62
+</tag>
+    <url>https://github.com/drankard/lein-project-template</url>
+  </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test</testSourceDirectory>

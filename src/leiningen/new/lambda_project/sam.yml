@@ -4,15 +4,14 @@ Parameters:
     Environment:
         Type: String
 Resources:
-  {{name}}:
+  {{sanitized}}:
     Type: 'AWS::Serverless::Function'
     Properties:
         FunctionName: {{name}}
         Tracing: Active
         AutoPublishAlias: !Ref Environment
-        Handler: {{name}}.handler::handle
+        Handler: {{sanitized}}.handler::handle
         Runtime: java8
         MemorySize: 1024
         Timeout: 20
         CodeUri: 'target/{{name}}-0.1.0-SNAPSHOT-standalone.jar'
-
